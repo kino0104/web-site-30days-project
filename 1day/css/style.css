@@ -1,0 +1,80 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Lucida Grande", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-size: 16px;
+	height: 100%;
+}
+@media screen and (max-width: 767px){
+	body {
+		font-size: 14px;
+	}
+}
+
+h1 {
+	color: 
+	font-size: 40px;
+	font-weight: bold;
+}
+@media screen and (max-width: 767px){
+	h1 {
+		font-size: 24px;
+	}
+}
+
+#container {
+	height: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	width: 90%;
+}
+@media screen and (max-width: 767px){
+	#container {
+		width: 100%;
+	}
+}
+
+body > #container {
+	height: auto;
+}
+
+#header {
+	border-bottom: 1px solid #CCC;
+	padding: 10px 0;
+}
+
+#main {
+	overflow: hidden;
+}
+
+#main-cont {
+	float: left;
+	height: 100%;
+	padding: 5% 0 0 0;
+	width: 50%;	
+}
+@media screen and (max-width: 767px) {
+	#main-cont {
+		width: 100%;
+	}
+}
+
+#side-cont {
+	float: right;
+	padding: 5% 1% 0 0;
+	width: 49%;
+}
+
+@media screen and (max-width: 767px) {
+	#side-cont {
+		visibility: hidden;
+	}
+}
+#footer {
+	border-top : 1px solid #CCC;
+	color: #CCC;
+	padding: 5px;
+	text-align: center;
+}
