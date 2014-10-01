@@ -14,9 +14,10 @@ body {
 }
 
 h1 {
-	color: 
+	color: orange;
 	font-size: 40px;
 	font-weight: bold;
+	text-shadow: 2px 2px 2px #CCC;
 }
 @media screen and (max-width: 767px){
 	h1 {
@@ -64,7 +65,8 @@ body > #container {
 #side-cont {
 	float: right;
 	padding: 5% 1% 0 0;
-	width: 49%;
+	width: 50%;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 767px) {
