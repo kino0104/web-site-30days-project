@@ -115,14 +115,13 @@ h3 {
 
 p {
 	margin: 0 0 2% 2%;
-word-wrap: break-word;
+	word-wrap: break-word;
 }
 
 ul.submenu>li {
-	background: url('../img/favicon.png') no-repeat;
-	padding: 0 0 5px 20px;
+	background: url('../img/vintage2.png') no-repeat;
+	padding: 0 0 5px 25px;
 }
-
 
 ul.product {
 	margin: 0 0 2% 2%;
