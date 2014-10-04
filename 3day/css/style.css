@@ -1,0 +1,123 @@
+html,body {
+  height: 100%;
+}
+body {
+  background-image: url(../img/background.jpeg);
+}
+
+#container {
+  min-height:100%;
+  text-align: center;
+  background: -webkit-linear-gradient(left, rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 16%,rgba(153,223,107,0.5) 32%,rgba(234,205,37,0.5) 48%,rgba(237,128,128,0.5) 64%,rgba(244,147,26,0.5) 80%,rgba(153,223,107,0.5)
+100%,rgba(234,205,37,0.5));
+  background: -moz-linear-gradient(left, rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 16%,rgba(153,223,107,0.5) 32%,rgba(234,205,37,0.5) 48%,rgba(237,128,128,0.5) 64%,rgba(244,147,26,0.5) 80%,rgba(153,223,107,0.5)
+100%,rgba(234,205,37,0.5));
+  background: linear-gradient(left, rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 16%,rgba(153,223,107,0.5) 32%,rgba(234,205,37,0.5) 48%,rgba(237,128,128,0.5) 64%,rgba(244,147,26,0.5) 80%,rgba(153,223,107,0.5)
+100%,rgba(234,205,37,0.5));
+
+  -webkit-animation:bg-color infinite 0.7s linear;
+  -moz-animation:bg-color infinite 0.7s linear;
+  animation:bg-color infinite 0.7s linear;
+}
+
+@-webkit-keyframes bg-color {
+  0% {
+    background: -webkit-linear-gradient(left,rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 16%,rgba(153,223,107,0.5) 32%,rgba(234,205,37,0.5) 48%,rgba(237,128,128,0.5) 64%,rgba(244,147,26,0.5) 80%,rgba(153,223,107,0.5)
+100%,rgba(234,205,37,0.5));
+  }
+
+  100% {
+    background: -webkit-linear-gradient(right,rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 20%,rgba(153,223,107,0.5) 36%,rgba(234,205,37,0.5) 55%,rgba(237,128,128,0.5) 70%,rgba(244,147,26,0.5) 85%,rgba(153,223,107,0.5)
+100%,rgba(244,147,26,0.5));
+  }
+}
+
+@-moz-keyframes bg-color {
+  0% {
+    background: -moz-linear-gradient(left,rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 16%,rgba(153,223,107,0.5) 32%,rgba(234,205,37,0.5) 48%,rgba(237,128,128,0.5) 64%,rgba(244,147,26,0.5) 80%,rgba(153,223,107,0.5)
+100%,rgba(234,205,37,0.5));
+  }
+
+  100% {
+    background: -moz-linear-gradient(right,rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 20%,rgba(153,223,107,0.5) 36%,rgba(234,205,37,0.5) 55%,rgba(237,128,128,0.5) 70%,rgba(244,147,26,0.5) 85%,rgba(153,223,107,0.5)
+100%,rgba(244,147,26,0.5));
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background: linear-gradient(left,rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 16%,rgba(153,223,107,0.5) 32%,rgba(234,205,37,0.5) 48%,rgba(237,128,128,0.5) 64%,rgba(244,147,26,0.5) 80%,rgba(153,223,107,0.5)
+100%,rgba(234,205,37,0.5));
+  }
+
+  100% {
+    background: linear-gradient(right,rgba(237,128,128,0.5) 0%,rgba(244,147,26,0.5) 20%,rgba(153,223,107,0.5) 36%,rgba(234,205,37,0.5) 55%,rgba(237,128,128,0.5) 70%,rgba(244,147,26,0.5) 85%,rgba(153,223,107,0.5)
+100%,rgba(244,147,26,0.5));
+  }
+}
+#main {
+  margin: 0 0 100px 0;
+  padding: 150px 0 0 0;
+}
+#main p {
+  color: #FFF;
+  font-size: 30px;
+}
+
+#menu {
+  width:200px;
+  margin: 0 auto;
+}
+
+#twitter {
+  width: 200px;
+}
+
+.fa-twitter {
+  font-size: 30px;
+  color: #FFF; 
+  border:1px solid #FFF;
+  border-radius: 10px;
+  background-color:rgba(255, 255, 255, 0.4);
+  padding: 5px;
+  transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  width:42px;
+height: 42px;
+  padding:5px;
+  margin-right: 10px;
+}
+
+.fa-instagram {
+  font-size: 30px;
+  color: #FFF; 
+  border:1px solid #FFF;
+  border-radius: 10px;
+  background-color:rgba(255, 255, 255, 0.4);
+  height: 42px;
+  padding:5px;
+  transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+   width:42px;
+  margin-right: 10px;
+}
+
+.fa-tumblr {
+  font-size: 30px;
+  color: #FFF; 
+  border:1px solid #FFF;
+  border-radius: 10px;
+  background-color:rgba(255, 255, 255, 0.4);
+  padding: 5px;
+  transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  width:42px;
+  height: 42px;
+  padding:5px;
+}
+
+.hover:hover {
+  cursor: pointer;
+  background-color: orange;
+  border:1px solid orange;
+}
