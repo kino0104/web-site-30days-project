@@ -1,0 +1,212 @@
+html {
+	height: 100%;
+}
+
+body {
+	height:100%;
+
+}
+
+#container {
+	min-height: 100%;
+}
+
+body > #container {
+	height: auto;
+}
+
+#container p {
+	text-align:center;
+	position: absolute;
+	top:100%;
+	left:50%;
+	margin-left:-185px;
+	margin-top: 15px;
+}
+@media screen and (max-width:767px) {
+	#container p {
+		font-size:10px;
+		margin-left:-130px;
+	}
+}
+
+div {
+
+}
+img {
+
+}
+
+#iphone {
+	position: absolute;
+	width:250px;
+	height:472px;
+	top: 50%;
+	left:50%;
+	margin-left: -125px;
+	margin-top:-236px;
+	/*opacity: 0.3;*/
+}
+#passcd {
+	position: absolute;
+	width:192px;
+	height:340.8px;
+	top: 50%;
+	left:50%;	
+	margin-left: -95px;
+	margin-top: -175px;
+}
+
+.iphone {
+	width:100%;
+	height:100%;
+}
+
+.passcd {
+	width:100%;
+	height:100%;
+	opacity: 0.6;
+}
+
+#twitter {
+	position: absolute;
+	font-size: 30px;
+	width: 42px;
+	height: 42px;
+	background-color: black;
+	color: #FFF;
+	text-align:center;
+	border-radius:42px;
+	margin-top: -188px;
+	margin-left: 18px;
+	-webkit-transition: background-color 0.5s ease-out;
+}
+.fa-twitter {
+	width:42px;
+	height:42px;
+	border-radius:42px;
+	position:absolute;
+	top:auto;
+	left:auto;
+	margin-left:-20px;
+	margin-top:6px;
+	color: #FFF;
+	z-index: 3;
+}
+
+#twitter:hover{
+	background-color:rgba(255, 255,255,0.5);
+}
+
+#instagram {
+	position: absolute;
+	font-size: 30px;
+	width: 42px;
+	height: 42px;
+	background-color: black;
+	color: #FFF;
+	text-align:center;
+	border-radius:42px;
+	margin-top: -82px;
+	margin-left: 75px;
+	-webkit-transition: background-color 0.5s ease-out;
+}
+.fa-instagram {
+	width:42px;
+	height:42px;
+	border-radius:42px;
+	position:absolute;
+	top:auto;
+	left:auto;
+	margin-left:-20px;
+	margin-top:6px;
+	color: #FFF;
+	z-index: 3;
+}
+
+#instagram:hover{
+	background-color:rgba(255, 255,255,0.5);
+}
+
+#github {
+	position: absolute;
+	font-size: 30px;
+	width: 42px;
+	height: 42px;
+	background-color: black;
+	color: #FFF;
+	text-align:center;
+	border-radius:42px;
+	margin-top: -241px;
+	margin-left: 75px;
+	-webkit-transition: background-color 0.5s ease-out;
+}
+.fa-github {
+	width:42px;
+	height:42px;
+	border-radius:42px;
+	position:absolute;
+	top:auto;
+	left:auto;
+	margin-left:-20px;
+	margin-top:6px;
+	color: #FFF;
+	z-index: 3;
+}
+
+#github:hover{
+	background-color:rgba(255, 255,255,0.5);
+}
+
+#tumblr {
+	position: absolute;
+	font-size: 30px;
+	width: 42px;
+	height: 42px;
+	background-color: black;
+	color: #FFF;
+	text-align:center;
+	border-radius:42px;
+	margin-top: -135px;
+	margin-left: 132px;
+	-webkit-transition: background-color 0.5s ease-out;
+}
+.fa-tumblr {
+	width:42px;
+	height:42px;
+	border-radius:42px;
+	position:absolute;
+	top:auto;
+	left:auto;
+	margin-left:-20px;
+	margin-top:6px;
+	color: #FFF;
+	z-index: 3;
+}
+
+#tumblr:hover{
+	background-color:rgba(255, 255,255,0.5);
+}
+
+#home {
+	position: absolute;
+	font-size: 30px;
+	width: 42px;
+	height: 42px;
+	background-color:rgba(255, 255,255,0);
+	color: #FFF;
+	text-align:center;
+	border-radius:42px;
+	margin-top: 10px;
+	margin-left: 75px;
+
+}
+.home {
+	width:42px;
+	height:42px;
+	border-radius:42px;
+	position:absolute;
+	margin-left:-20px;
+	margin-top:6px;
+	z-index: 3;
+}
