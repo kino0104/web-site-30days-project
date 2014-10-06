@@ -1,0 +1,31 @@
+html{
+	height: 100%;
+}
+
+body {
+	height:100%;
+}
+
+#container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+body > #container {
+	height: auto;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+p {
+	margin: 20px 0 0 0;
+}
+#btn, #reset, #result {
+	margin: 20px 0 0 0;
+}
+
+#result {
+	font-size: 20px;
+}
