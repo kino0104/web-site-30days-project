@@ -1,0 +1,43 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#container {
+	min-height: 100%;
+	width: 90%;
+	margin: 0 auto;
+}
+
+body > #container {
+	height: auto;
+}
+
+#contents {
+	padding: 0 10%;
+}
+#img {
+	width: 19%;
+	float: left;
+}
+
+#result {
+	width: 81%;
+	margin-left: 20%;
+	box-sizing:border-box;
+}
+img.thumbnail {
+	width: 100%;
+}
+
+#photo {
+	width: 76%;
+}
+
+h1 {
+	font-size: 24px;
+	padding: 0 10%;
+}
