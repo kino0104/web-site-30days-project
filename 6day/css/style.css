@@ -19,6 +19,11 @@ body > #container {
 #contents {
 	padding: 0 10%;
 }
+@media screen and (max-width: 767px){
+	#contents {
+		padding: 0;
+	}
+}
 #img {
 	width: 19%;
 	float: left;
@@ -41,4 +46,11 @@ img.thumbnail {
 h1 {
 	font-size: 24px;
 	padding: 0 10%;
+}
+
+@media screen and (max-width: 767px){
+	h1 {
+		font-size: 16px;
+		padding: 0;
+	}
 }
