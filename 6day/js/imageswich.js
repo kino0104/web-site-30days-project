@@ -1,6 +1,5 @@
 onload = function(){
-var attrs = [],
-	photo = document.getElementById('photo'),
+	var photo = document.getElementById('photo');
 	thumbnail = document.getElementsByClassName('thumbnail');
 
  	 for(var i = 0; i < thumbnail.length; i++){
