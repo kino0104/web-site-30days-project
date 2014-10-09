@@ -1,0 +1,42 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#container {
+	min-height: 100%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+body > #container {
+	height: auto;
+}
+
+#slide {
+	width: 70%;
+	position: relative;
+}
+@media screen and (max-width:767px){
+	#slide {
+		width: 100%;
+	}
+}
+
+h1 {
+	font-size: 20px;
+}
+
+img {
+	width: 100%;
+}
+li {
+	position: absolute;
+	display: none;	
+}
+li:first-child {
+	display:block;
+}
