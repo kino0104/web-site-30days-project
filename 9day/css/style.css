@@ -14,18 +14,30 @@ body > #container {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 100px;
-  height: 30px;
   margin-top: -50px;
   margin-left: -50px;
 }
 
 ul {
   position: relative;
-  width: 100px;
   color: #FFF;
 }
-#crossMenu ul a {
+
+/* li要素を全て重ねる */
+li {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+/* li要素でclassがmenu以外透明にする */
+li:not(.menu) {
+  font-size: 40px;
+  opacity: 0;
+}
+
+/*リンクをブロック要素にする*/
+#crossMenu li a {
   color: #FFF;
   display: block;
   width: 100px;
@@ -35,71 +47,62 @@ ul {
   line-height: 100px;
   border-radius: 50px;
 }
-
-li {
-  position: absolute;
-  top: 0;
-  left: 0; 
-}
-
+/*classがtopのli要素を0.3秒かけて動かす*/
 .top {
-  -webkit-transition:  0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
+/*classがrightのli要素を0.1秒後に0.3秒かけて動かす*/
 .right {
-  -webkit-transition:  0.3s ease-in-out 0.1s;
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
   transition: all 0.3s ease-in-out 0.1s;
 }
-
+/*classがbottomのli要素を0.2秒後に0.3秒かけて動かす*/
 .bottom {
-  -webkit-transition:  0.3s ease-in-out 0.2s;
+  -webkit-transition: all 0.3s ease-in-out 0.2s;
   transition: all 0.3s ease-in-out 0.2s;
 }
-
+/*classがleftのli要素を0.3秒後に0.3秒かけて動かす*/
 .left {
-  -webkit-transition:  0.3s ease-in-out 0.3s;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
   transition: all 0.3s ease-in-out 0.3s;
 }
 
-#crossMenu li:not(.menu) {
-  font-size: 40px;
-  opacity: 0;
-}
-
+/* カーソルが乗ったときに黄色にする*/
 #crossMenu a:hover {
-  background: rgba(230,150,20,0.7);
+  background: rgba(230,150,0,0.6);
 }
-
+/* class menuが一番上に表示されるように設定 */
 .menu {
 	z-index:9;
 }
 
+/* カーソルが乗ったらclassがtopのli要素を上に100px動かし、透明でなくす（以下、右、下、左もそれぞれ動かす） */
 #crossMenu:hover .top {
-  -webkit-transform: translate(0,-100px) scale(1);
-  -ms-transform: translate(0,-100px) scale(1);
-  transform: translate(0,-100px) scale(1);
+  -webkit-transform: translate(0,-100px);
+  -ms-transform: translate(0,-100px);
+  transform: translate(0,-100px);
   opacity: 1;
 }
 
 #crossMenu:hover .bottom {
-  -webkit-transform: translate(0,100px) scale(1);
-  -ms-transform: translate(0,100px) scale(1);
-  transform: translate(0,100px) scale(1);
+  -webkit-transform: translate(0,100px);
+  -ms-transform: translate(0,100px);
+  transform: translate(0,100px);
   opacity: 1;
 }
 
 #crossMenu:hover .right {
-  -webkit-transform: translate(100px,0) scale(1);
-  -ms-transform: translate(100px,0) scale(1);
-  transform: translate(100px,0) scale(1);
+  -webkit-transform: translate(100px,0);
+  -ms-transform: translate(100px,0);
+  transform: translate(100px,0);
   opacity: 1;
 }
 
 #crossMenu:hover .left {
-    -webkit-transform: translate(-100px,0) scale(1);
-    -ms-transform: translate(-100px,0) scale(1);
-    transform: translate(-100px,0) scale(1);
+    -webkit-transform: translate(-100px,0);
+    -ms-transform: translate(-100px,0);
+    transform: translate(-100px,0);
     opacity: 1;
 }
 
