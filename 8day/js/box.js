@@ -11,7 +11,6 @@ window.onload = function(){
 		canvas.height = container.offsetHeight;
 	}
 	
-	//window.addEventListener("resize",function(){
 	window.onresize = function(){
 		clearTimeout(queue);
 		queue = setTimeout(function(){
