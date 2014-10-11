@@ -1,0 +1,117 @@
+html,body {
+	height: 100%;
+}
+
+#container {
+	min-height: 100%;
+}
+
+body > #container {
+	height: auto;
+}
+
+#crossMenu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 30px;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+ul {
+  position: relative;
+  width: 100px;
+  color: #FFF;
+}
+#crossMenu ul a {
+  color: #FFF;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: rgba(0,50,150,0.7);
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50px;
+}
+
+li {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.top {
+  -webkit-transition:  0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.right {
+  -webkit-transition:  0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.bottom {
+  -webkit-transition:  0.3s ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.left {
+  -webkit-transition:  0.3s ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+#crossMenu li:not(.menu) {
+  font-size: 40px;
+  opacity: 0;
+}
+
+#crossMenu a:hover {
+  background: rgba(230,150,20,0.7);
+}
+
+.menu {
+	z-index:9;
+}
+
+#crossMenu:hover .top {
+  -webkit-transform: translate(0,-100px) scale(1);
+  -ms-transform: translate(0,-100px) scale(1);
+  transform: translate(0,-100px) scale(1);
+  opacity: 1;
+}
+
+#crossMenu:hover .bottom {
+  -webkit-transform: translate(0,100px) scale(1);
+  -ms-transform: translate(0,100px) scale(1);
+  transform: translate(0,100px) scale(1);
+  opacity: 1;
+}
+
+#crossMenu:hover .right {
+  -webkit-transform: translate(100px,0) scale(1);
+  -ms-transform: translate(100px,0) scale(1);
+  transform: translate(100px,0) scale(1);
+  opacity: 1;
+}
+
+#crossMenu:hover .left {
+    -webkit-transform: translate(-100px,0) scale(1);
+    -ms-transform: translate(-100px,0) scale(1);
+    transform: translate(-100px,0) scale(1);
+    opacity: 1;
+}
+
+#footer {
+	border-top : 1px solid #CCC;
+	color: #CCC;
+	padding: 5px;
+	text-align: center;
+	position: fixed;
+	width: 90%;
+	margin: 0 auto;
+	bottom: 0%;
+	left: 5%;
+	background: #FFF;
+}
