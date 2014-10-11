@@ -1,7 +1,6 @@
 window.onload = function(){
 	var container = document.getElementById('container'),
 		queue = null,
-		wait = 300,
 		canvas = document.getElementById('box');
 	
 	canvasSize();
@@ -12,12 +11,13 @@ window.onload = function(){
 		canvas.height = container.offsetHeight;
 	}
 	
-	window.addEventListener("resize",function(){
+	//window.addEventListener("resize",function(){
+	window.onresize = function(){
 		clearTimeout(queue);
 		queue = setTimeout(function(){
 			canvasSize();
-		}, wait);
-	},false);
+		}, 200);
+	}
 	
 	function draw(){
 		if(!canvas || !canvas.getContext) return false;
