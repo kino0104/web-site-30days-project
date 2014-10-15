@@ -1,0 +1,177 @@
+html,body {
+	height: 100%;
+}
+
+#container {
+	min-height:100%;
+	min-width: 1200px;	
+}
+
+body > #container {
+	height: auto;
+}
+
+#headerArea {
+
+}
+
+#headerArea >.siteID {
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 40px;
+	border-bottom: 1px solid orange;
+}
+
+.categoryNav {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.categoryNav ul {
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+.categoryNav ul li {
+	font-size: 13px;
+	float: left;
+	width: 162px;
+	text-align: center;
+	border-right: 1px dotted orange;
+}
+
+.categoryNav ul li:first-child {
+	border-left: 1px dotted orange;
+}
+
+.categoryNav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.categoryNav ul li a:hover {
+	text-decoration:underline;
+	color: orange;
+}
+
+.contentsHeader {
+	min-height: 366px;
+	background: url(../img/main_img.jpg) center top no-repeat;
+}
+
+.contentsHeader h2 {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	padding: 50px 10px 10px 10px;
+}
+
+.contentsHeader h2:after {
+	content: "";
+	display: block;
+	width: 150px;
+	height: 2px;
+	margin: 20px auto auto;
+	background: #fff;
+}
+
+.contentsHeader p {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+.section {
+	min-height: 183px;
+}
+
+.section h2 {
+	font-size: 40px;
+	text-align: center;
+	padding: 50px 10px 10px 10px;
+}
+
+.section h2:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 300px;
+	margin: 20px auto auto;
+	background: black;
+}
+
+.section > p {
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+ul.contentsNav {
+	width: 980px;
+	margin: auto;
+}
+
+ul.contentsNav li.odd {
+	background-image: url(../img/560x220.gif);
+	background-position: left center;
+	border-bottom: 1px solid #FFF;
+	height:180px;
+	overflow: hidden;
+}
+
+ul.contentsNav li a {
+	display: block;
+}
+.odd > .figure {
+	width: 360px;
+	height: 180px;
+	position: relative;
+	float: right;
+	background: orange;
+}
+
+ul.contentsNav li.even {
+	background-image: url(../img/560x220.gif);
+	background-position: right center;
+	border-bottom: 1px solid #FFF;
+	height:180px;
+	overflow: hidden;
+}
+
+.even > .figure {
+	width: 360px;
+	height: 180px;
+	position: relative;
+	float: left;
+	background: orange;
+}
+
+.even a ,.odd a {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	padding:10px;
+}
+.even p, .odd p {
+	font-size: 20px;
+	padding: 10px 0 0 0;
+}
+
+p.title {
+	font-size: 14px;
+}
+
+#footer {
+	border-top: 1px solid orange;
+	font-size: 12px;
+	width: 980px;
+	margin: 10px auto 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+#footer a {
+	text-decoration: none;
+	color: black;
+}
