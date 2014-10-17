@@ -1,0 +1,41 @@
+html,body {
+	height: 100%;
+}
+
+#container {
+	min-height: 100%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+body > #container {
+	height: auto;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+@media screen and (max-width: 767px){
+	h1 {
+		font-size: 20px;
+	}
+
+#accordion {
+	border: 1px solid #c0c0c0;
+	width: 35%;
+}
+
+@media screen and (max-width: 767px){
+	#accordion {
+		width: 100%;
+	}
+}
+
+#accordion dt a {
+	background-color: #d3d3d3;
+	border: 1px solid #c0c0c0;
+	color: #000;
+	display: block;
+	text-decoration: none;
+}
